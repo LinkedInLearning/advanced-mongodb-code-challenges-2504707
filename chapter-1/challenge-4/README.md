@@ -5,7 +5,7 @@
 Use the `aggregate()` method with `$project` to run the following queries in the customers collection:
 
 1. All customers, but shape the output by only returning their name and the number of `favoriteCategories` for each
-1. The average number of customer `favoriteCategories`, grouped by `state`
+1. The average number of customer `favoriteCategories`, grouped by the `state` for their billing address.
 
 Consider:
 
@@ -71,14 +71,23 @@ db.customers.aggregate([
       _id: "$addresses.billing.state",
       avgFavorites: { $avg: { $size: "$favoriteCategories" } }
     }
+  },
+  {
+    $project: {
+      _id: false,
+      state: "$_id",
+      avgFavorites: true
+    }
   }
 ])
 
 // OUTPUT
 
 [
-  { _id: null, avgFavorites: 1 },
-  { _id: 'WA', avgFavorites: 1.6666666666666667 }
+  { avgFavorites: 2, state: 'NJ' }
+  { avgFavorites: 1, state: 'FL' }
+  { avgFavorites: 1.5, state: 'WA' }
+
 ]
 
 ```

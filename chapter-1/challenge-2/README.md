@@ -32,7 +32,7 @@ db.orders.aggregate([
     }
   },
   {
-    $sort: { amount: -1 }
+    $sort: { date: -1 }
   }
 ])
 ```

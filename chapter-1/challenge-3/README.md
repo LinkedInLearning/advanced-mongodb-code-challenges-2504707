@@ -25,14 +25,15 @@ Consider:
 db.customers.aggregate([
   {
     $addFields: {
-      faves: "$favoriteCategories"
+      favorites: "$favoriteCategories"
     }
   },
   {
     $project: {
-      _id: 0,
-      name: 1,
-      faves: 1
+      _id: false,
+      name: true,
+      email: true,
+      favorites: true
     }
   }
 ])
@@ -42,12 +43,12 @@ db.customers.aggregate([
 
 ```javascript
 [
-  { name: 'Gene', faves: [ 'sports' ] },
-  { name: 'Zach', faves: [ 'sports' ] },
-  { name: 'Cathy', faves: [ 'food', 'sports', 'clothing' ] },
-  { name: 'Josie', faves: [ 'food' ] },
-  { name: 'Allie', faves: [ 'clothing' ] },
-  { name: 'Rosie', faves: [ 'food' ] },
+  { name: 'Gene', favorites: [ 'sports' ] },
+  { name: 'Zach', favorites: [ 'sports' ] },
+  { name: 'Cathy', favorites: [ 'food', 'sports', 'clothing' ] },
+  { name: 'Josie', favorites: [ 'food' ] },
+  { name: 'Allie', favorites: [ 'clothing' ] },
+  { name: 'Rosie', favorites: [ 'food' ] },
   { name: 'Luna' }
 ]
 ```

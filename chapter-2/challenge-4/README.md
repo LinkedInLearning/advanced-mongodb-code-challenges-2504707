@@ -41,6 +41,7 @@ db.orders.aggregate([
       as: "customer"
     }
   },
+  { $limit: 1 }
 ]);
 ```
 
@@ -134,6 +135,7 @@ db.orders.aggregate([
   {
     $project: { _id: 0, customer: 0 }
   },
+  { $limit: 1 }
 ])
 
 ```

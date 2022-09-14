@@ -25,7 +25,7 @@ Consider:
 // Customers Cursor, travels through the DB
 let cursor = db.customers.find({});
    
-cursor.forEach( cusomter => print(customer.name) )
+cursor.forEach( customer => print(customer.name) )
 
 // Try that forEach again ... what happens?
 // The cursor is "exhausted", the stack of records has been processed.

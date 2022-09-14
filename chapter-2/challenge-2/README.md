@@ -4,8 +4,7 @@
 
 Declare a cursor with `find()` and use a loop to perform a subsequent lookup.
 
-1. Return a list of all orders (with details) for a given customer
-   - Use Compass or a `find()` to first find a valid customer id and start by finding that customer.
+1. Return a list of all orders (with details) for each customer in the collection
    - Traverse the cursor with a `while()` loop, looking up the customer orders.
    - Repeat the process, this time, traversing the cursor with a `forEach()` loop, looking up the customer orders.
 
@@ -24,11 +23,13 @@ Consider:
 
 ```javascript
 // Customers Cursor, travels through the DB
-let cursor = db.customers.find({ _id: ObjectId('6312d87c9df14eea7e2ca9e4') });
+let cursor = db.customers.find({});
 
 // Traditional cursor iteration
 while (cursor.hasNext()) {
   let customer = cursor.next();
+  print("-----------------------------------------");
+  print(customer.name);
   customer.orders.forEach((orderId, idx) => {
     let order = db.orders.find({ _id: ObjectId(orderId.toString()) })
     print(order);
@@ -37,7 +38,8 @@ while (cursor.hasNext()) {
 
 // With a forEach ...
 cursor.forEach(customer => {
-  print(customer);
+  print(customer.name);
+  print("-----------------------------------------");
   customer.orders.forEach((orderId, idx) => {
     let order = db.orders.find({ _id: ObjectId(orderId.toString()) })
     print(order);

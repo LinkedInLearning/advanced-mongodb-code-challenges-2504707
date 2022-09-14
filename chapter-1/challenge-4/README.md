@@ -31,14 +31,14 @@ db.customers.aggregate([
   },
   {
     $addFields: {
-      faves: "$favoriteCategories"
+      favorites: "$favoriteCategories"
     }
   },
   {
     $project: {
       _id: 0,
       name: 1,
-      faves: { $size: "$faves" }
+      favorites: { $size: "$favorites" }
     }
   }
 ])
@@ -46,12 +46,12 @@ db.customers.aggregate([
 // OUTPUT:
 
 [
-  { name: 'Gene', faves: 1 },
-  { name: 'Zach', faves: 1 },
-  { name: 'Cathy', faves: 3 },
-  { name: 'Josie', faves: 1 },
-  { name: 'Allie', faves: 1 },
-  { name: 'Rosie', faves: 1 }
+  { name: 'Gene', favorites: 1 },
+  { name: 'Zach', favorites: 1 },
+  { name: 'Cathy', favorites: 3 },
+  { name: 'Josie', favorites: 1 },
+  { name: 'Allie', favorites: 1 },
+  { name: 'Rosie', favorites: 1 }
 ]
 
 ```

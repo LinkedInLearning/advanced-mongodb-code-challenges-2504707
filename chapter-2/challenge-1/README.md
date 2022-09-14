@@ -4,7 +4,6 @@
 
 Use `findOne()` to run the following queries:
 
-1. Return the customer id associated with an order, given an order id
 1. Return the full customer document associated with an order, given an order id
    - Use `findOne()` to obtain a customer id from an order and then use that to return a customer using `findOne()`) with that ID. This should be a nested call.
    
@@ -20,9 +19,6 @@ Note: Begin by using Compass or a `find()` to first find a valid order id and wo
   <summary>Click to expand</summary>
 
 ```javascript
-// Single Object
-db.orders.findOne({ _id: ObjectId("6312f4a6f80e3117f621a469") })
-
 // Use an object to find an object
 db.customers.findOne({
   _id: db.orders.findOne({ _id: ObjectId("6312f4a6f80e3117f621a469") }, { customer: 1, _id: 0 }).customer

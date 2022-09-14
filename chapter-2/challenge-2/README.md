@@ -25,6 +25,16 @@ Consider:
 // Customers Cursor, travels through the DB
 let cursor = db.customers.find({});
 
+// With a forEach ...
+cursor.forEach(customer => {
+  print(customer.name);
+  print("-----------------------------------------");
+  customer.orders.forEach((orderId, idx) => {
+    let order = db.orders.find({ _id: ObjectId(orderId.toString()) })
+    print(order);
+  })
+});
+   
 // Traditional cursor iteration
 while (cursor.hasNext()) {
   let customer = cursor.next();
@@ -35,16 +45,6 @@ while (cursor.hasNext()) {
     print(order);
   })
 }
-
-// With a forEach ...
-cursor.forEach(customer => {
-  print(customer.name);
-  print("-----------------------------------------");
-  customer.orders.forEach((orderId, idx) => {
-    let order = db.orders.find({ _id: ObjectId(orderId.toString()) })
-    print(order);
-  })
-});
 
 ```
 

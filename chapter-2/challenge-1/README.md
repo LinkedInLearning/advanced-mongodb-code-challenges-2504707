@@ -2,13 +2,13 @@
 
 ## Challenge
 
-Use find() and `findOne()` to run the following queries in the customers collection:
+Use `findOne()` to run the following queries:
 
-1. Return an order by it's ID using 'find()'
-1. Return an order by it's ID using `findOne()`
-1. Return a customer associated with an order.
-   - Use Compass or a `find()` to first find a valid order id
+1. Return the customer id associated with an order, given an order id
+1. Return the full customer document associated with an order, given an order id
    - Use `findOne()` to obtain a customer id from an order and then use that to return a customer using `findOne()`) with that ID. This should be a nested call.
+   
+Note: Begin by using Compass or a `find()` to first find a valid order id and work these queries with that _id
 
 ### Hints
 
@@ -20,9 +20,6 @@ Use find() and `findOne()` to run the following queries in the customers collect
   <summary>Click to expand</summary>
 
 ```javascript
-// Array
-db.orders.find({ _id: ObjectId("6312f4a6f80e3117f621a469") })
-
 // Single Object
 db.orders.findOne({ _id: ObjectId("6312f4a6f80e3117f621a469") })
 

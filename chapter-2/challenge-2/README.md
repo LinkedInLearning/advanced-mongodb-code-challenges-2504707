@@ -24,6 +24,11 @@ Consider:
 ```javascript
 // Customers Cursor, travels through the DB
 let cursor = db.customers.find({});
+   
+cursor.forEach( cusomter => print(customer.name) )
+
+// Try that forEach again ... what happens?
+// The cursor is "exhausted", the stack of records has been processed.
 
 // With a forEach ...
 cursor.forEach(customer => {

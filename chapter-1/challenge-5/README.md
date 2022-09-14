@@ -29,6 +29,13 @@ db.customers.aggregate([
       _id: "$addresses.billing.state",
       avgFavorites: { $avg: { $size: "$favoriteCategories" } }
     }
+  },
+  {
+    $project: {
+      _id: false,
+      state: "$_id",
+      avgFavorites: true
+    }
   }
 ])
 
@@ -76,6 +83,13 @@ db.customers.aggregate([
           lang: "js"
         }
       }
+    }
+  },
+  {
+    $project: {
+      _id: false,
+      state: "$_id",
+      avgFavorites: true
     }
   }
 ])

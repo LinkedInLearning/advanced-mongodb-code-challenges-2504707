@@ -68,7 +68,7 @@ db.customers.aggregate([
   },
   {
     $group: {
-      _id: "$addresses.shipping.state",
+      _id: "$addresses.billing.state",
       avgFavorites: { $avg: { $size: "$favoriteCategories" } }
     }
   }

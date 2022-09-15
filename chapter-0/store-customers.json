@@ -1,0 +1,247 @@
+[
+  {
+    "_id": {
+      "$oid": "6312d87c9df14eea7e2ca9e3"
+    },
+    "name": "Cathy",
+    "email": "cathy@example.com",
+    "phone": "206-555-2222",
+    "active": true,
+    "customerSince": {
+      "$date": "2021-09-12T00:00:00Z"
+    },
+    "favoriteCategories": [
+      "food",
+      "sports",
+      "clothing"
+    ],
+    "addresses": {
+      "shipping": {
+        "address": "123 Main St",
+        "city": "Some Town",
+        "state": "WA",
+        "zip": "12345"
+      },
+      "billing": {
+        "address": "123 Bank St",
+        "city": "Some Town",
+        "state": "WA",
+        "zip": "12345"
+      }
+    },
+    "orders": [
+      {
+        "$oid": "6312eec6f80e3117f621a463"
+      },
+      {
+        "$oid": "6312eed4f80e3117f621a464"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6312d87c9df14eea7e2ca9e5"
+    },
+    "name": "Allie",
+    "email": "allie@example.com",
+    "phone": "206-555-4444",
+    "active": true,
+    "customerSince": {
+      "$date": "2022-02-09T00:00:00Z"
+    },
+    "favoriteCategories": [
+      "clothing"
+    ],
+    "addresses": {
+      "shipping": {
+        "address": "123 Main St",
+        "city": "Some Town",
+        "state": "WA",
+        "zip": "12345"
+      },
+      "billing": {
+        "address": "123 Main St",
+        "city": "Some Town",
+        "state": "WA",
+        "zip": "12345"
+      }
+    },
+    "orders": [
+      {
+        "$oid": "6312eedbf80e3117f621a465"
+      },
+      {
+        "$oid": "6312f4a6f80e3117f621a466"
+      },
+      {
+        "$oid": "6312f4a6f80e3117f621a467"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6312d9d228cec973e20022ff"
+    },
+    "name": "Gene",
+    "email": "gene@exmple.com",
+    "phone": "555-1212",
+    "active": false,
+    "customerSince": {
+      "$date": "2021-10-30T00:00:00.001Z"
+    },
+    "favoriteCategories": [
+      "sports"
+    ],
+    "addresses": {
+      "billing": {
+        "address": "222 Some Rd",
+        "city": "Some Town",
+        "state": "FL",
+        "zip": "12345"
+      }
+    },
+    "orders": [
+      {
+        "$oid": "6312f4a6f80e3117f621a468"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6312d87c9df14eea7e2ca9e4"
+    },
+    "name": "Zach",
+    "email": "zach@example.com",
+    "phone": "206-555-3333",
+    "active": true,
+    "customerSince": {
+      "$date": "2022-06-17T00:00:00Z"
+    },
+    "favoriteCategories": [
+      "sports"
+    ],
+    "addresses": {
+      "billing": {
+        "address": "123 Main St",
+        "city": "Some Town",
+        "state": "WA",
+        "zip": "12345"
+      }
+    },
+    "orders": [
+      {
+        "$oid": "6312f4a6f80e3117f621a469"
+      },
+      {
+        "$oid": "6312f4a6f80e3117f621a46a"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6312d9179df14eea7e2ca9ea"
+    },
+    "name": "Luna",
+    "email": "luna@example.com",
+    "phone": "206-555-6666",
+    "active": true,
+    "customerSince": {
+      "$date": "2021-09-12T00:00:00Z"
+    },
+    "orders": [],
+    "addresses": {
+      "billing": {
+        "address": "124 Bark Ave",
+        "city": "Some Town",
+        "state": "WA",
+        "zip": "12345"
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6312d9d228cec973e20022fe"
+    },
+    "name": "Josie",
+    "email": "josie@exmple.com",
+    "phone": "555-1212",
+    "active": false,
+    "customerSince": {
+      "$date": "2022-06-30T00:00:00.001Z"
+    },
+    "favoriteCategories": [
+      "food"
+    ],
+    "orders": [],
+    "addresses": {
+      "billing": {
+        "address": "222 Some Rd",
+        "city": "Some Town",
+        "state": "FL",
+        "zip": "12345"
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6312d9179df14eea7e2ca9e9"
+    },
+    "name": "Rosie",
+    "email": "rosie@example.com",
+    "phone": "206-555-5555",
+    "active": true,
+    "customerSince": {
+      "$date": "2021-09-12T00:00:00Z"
+    },
+    "favoriteCategories": [
+      "food"
+    ],
+    "addresses": {
+      "billing": {
+        "address": "123 Bark Ave",
+        "city": "Some Town",
+        "state": "WA",
+        "zip": "12345"
+      }
+    },
+    "orders": [
+      {
+        "$oid": "6312f4a6f80e3117f621a46b"
+      },
+      {
+        "$oid": "6312f4a6f80e3117f621a46c"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6312d7859df14eea7e2ca9e1"
+    },
+    "name": "John",
+    "email": "john@example.com",
+    "phone": "206-555-1212",
+    "active": true,
+    "customerSince": {
+      "$date": "2022-08-30T00:00:00Z"
+    },
+    "favoriteCategories": [
+      "clothing",
+      "food"
+    ],
+    "orders": [],
+    "addresses": {
+      "billing": {
+        "address": "555 Pike St",
+        "city": "Small Town",
+        "state": "NJ",
+        "zip": "12345"
+      },
+      "shipping": {
+        "address": "123 Main St",
+        "city": "Some Town",
+        "state": "WA",
+        "zip": "12345"
+      }
+    }
+  }
+]

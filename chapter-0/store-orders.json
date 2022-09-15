@@ -1,0 +1,270 @@
+[
+  {
+    "_id": {
+      "$oid": "6312eec6f80e3117f621a463"
+    },
+    "amount": {
+      "$numberDecimal": "5.99"
+    },
+    "date": {
+      "$date": "2022-08-30T00:00:00Z"
+    },
+    "customer": {
+      "$oid": "6312d87c9df14eea7e2ca9e3"
+    },
+    "items": [
+      {
+        "name": "Widget",
+        "price": {
+          "$numberDecimal": "5.99"
+        },
+        "quantity": {
+          "$numberDecimal": "1"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6312eed4f80e3117f621a464"
+    },
+    "amount": {
+      "$numberDecimal": "25.99"
+    },
+    "date": {
+      "$date": "2022-08-20T00:00:00Z"
+    },
+    "customer": {
+      "$oid": "6312d87c9df14eea7e2ca9e3"
+    },
+    "items": [
+      {
+        "name": "Widget",
+        "price": {
+          "$numberDecimal": "5.99"
+        },
+        "quantity": {
+          "$numberDecimal": "1"
+        }
+      },
+      {
+        "name": "Widget Container",
+        "price": {
+          "$numberDecimal": "20.00"
+        },
+        "quantity": {
+          "$numberDecimal": "1"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6312eedbf80e3117f621a465"
+    },
+    "amount": {
+      "$numberDecimal": "29.95"
+    },
+    "date": {
+      "$date": "2022-07-20T00:00:00Z"
+    },
+    "customer": {
+      "$oid": "6312d87c9df14eea7e2ca9e5"
+    },
+    "items": [
+      {
+        "name": "Widget",
+        "price": {
+          "$numberDecimal": "5.99"
+        },
+        "quantity": {
+          "$numberDecimal": "5"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6312f4a6f80e3117f621a466"
+    },
+    "amount": {
+      "$numberDecimal": "15.99"
+    },
+    "date": {
+      "$date": "2022-07-20T00:00:00Z"
+    },
+    "customer": {
+      "$oid": "6312d87c9df14eea7e2ca9e5"
+    },
+    "items": [
+      {
+        "name": "Widget",
+        "price": {
+          "$numberDecimal": "22.98"
+        },
+        "quantity": {
+          "$numberDecimal": "2"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6312f4a6f80e3117f621a467"
+    },
+    "amount": {
+      "$numberDecimal": "20.00"
+    },
+    "date": {
+      "$date": "2022-08-20T00:00:00Z"
+    },
+    "customer": {
+      "$oid": "6312d87c9df14eea7e2ca9e5"
+    },
+    "items": [
+      {
+        "name": "Widget Box",
+        "price": {
+          "$numberDecimal": "20.00"
+        },
+        "quantity": {
+          "$numberDecimal": "1"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6312f4a6f80e3117f621a468"
+    },
+    "amount": {
+      "$numberDecimal": "5.99"
+    },
+    "date": {
+      "$date": "2022-07-10T00:00:00Z"
+    },
+    "customer": {
+      "$oid": "6312d9d228cec973e20022ff"
+    },
+    "items": [
+      {
+        "name": "Widget",
+        "price": {
+          "$numberDecimal": "5.99"
+        },
+        "quantity": {
+          "$numberDecimal": "1"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6312f4a6f80e3117f621a469"
+    },
+    "amount": {
+      "$numberDecimal": "51.98"
+    },
+    "date": {
+      "$date": "2022-07-10T00:00:00Z"
+    },
+    "customer": {
+      "$oid": "6312d87c9df14eea7e2ca9e4"
+    },
+    "items": [
+      {
+        "name": "Widget",
+        "price": {
+          "$numberDecimal": "11.98"
+        },
+        "quantity": {
+          "$numberDecimal": "2"
+        }
+      },
+      {
+        "name": "Widget Box",
+        "price": {
+          "$numberDecimal": "20.00"
+        },
+        "quantity": {
+          "$numberDecimal": "2"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6312f4a6f80e3117f621a46a"
+    },
+    "amount": {
+      "$numberDecimal": "11.98"
+    },
+    "date": {
+      "$date": "2022-07-10T00:00:00Z"
+    },
+    "customer": {
+      "$oid": "6312d87c9df14eea7e2ca9e4"
+    },
+    "items": [
+      {
+        "name": "Widget",
+        "price": {
+          "$numberDecimal": "5.99"
+        },
+        "quantity": {
+          "$numberDecimal": "2"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6312f4a6f80e3117f621a46b"
+    },
+    "amount": {
+      "$numberDecimal": "5.99"
+    },
+    "date": {
+      "$date": "2022-07-10T00:00:00Z"
+    },
+    "customer": {
+      "$oid": "6312d9179df14eea7e2ca9e9"
+    },
+    "items": [
+      {
+        "name": "Widget",
+        "price": {
+          "$numberDecimal": "5.99"
+        },
+        "quantity": {
+          "$numberDecimal": "1"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6312f4a6f80e3117f621a46c"
+    },
+    "amount": {
+      "$numberDecimal": "299.50"
+    },
+    "date": {
+      "$date": "2022-07-11T00:00:00Z"
+    },
+    "customer": {
+      "$oid": "6312d9179df14eea7e2ca9e9"
+    },
+    "items": [
+      {
+        "name": "Widget",
+        "price": {
+          "$numberDecimal": "5.99"
+        },
+        "quantity": {
+          "$numberDecimal": "50"
+        }
+      }
+    ]
+  }
+]

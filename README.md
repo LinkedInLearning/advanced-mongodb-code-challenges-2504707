@@ -5,8 +5,6 @@ This is the repository for the LinkedIn Learning course Level Up: Advanced Mongo
 
 MongoDB is one of the most popular nonrelational databases in the world. If you’re looking to build out your skill set, your best move may be to dive right in. In this approachable, hands-on course, instructor John Cokos leads intermediate to advanced users through a series of practical coding challenges to help you get the most out of MongoDB. Learn how to query or find using aggregation pipelines to process documents, sort and group records, shape your output, and create calculated fields. Along the way, you’ll build out your toolbox with the necessary skills to work with multiple documents and relationships.
 
-## Instructions
-
 
 ## Installing
 1. To use these exercise files, you must have the following installed:

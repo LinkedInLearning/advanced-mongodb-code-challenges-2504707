@@ -1,7 +1,10 @@
-# Advanced MongoDB Code Challenges
-This is the repository for the LinkedIn Learning course Advanced MongoDB Code Challenges. The full course is available from [LinkedIn Learning][lil-course-url].
+# Level Up: Advanced MongoDB
+This is the repository for the LinkedIn Learning course Level Up: Advanced MongoDB. The full course is available from [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
+![Level Up: Advanced MongoDB][lil-thumbnail-url] 
+
+MongoDB is one of the most popular nonrelational databases in the world. If you’re looking to build out your skill set, your best move may be to dive right in. In this approachable, hands-on course, instructor John Cokos leads intermediate to advanced users through a series of practical coding challenges to help you get the most out of MongoDB. Learn how to query or find using aggregation pipelines to process documents, sort and group records, shape your output, and create calculated fields. Along the way, you’ll build out your toolbox with the necessary skills to work with multiple documents and relationships.
+
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
 
@@ -27,8 +30,15 @@ To resolve this issue:
 3. [Course-specific instructions]
 
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
+### Instructor
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+John Cokos 
+                            
 
+
+                            
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/john-cokos).
+
+[lil-course-url]: https://www.linkedin.com/learning/level-up-advanced-mongodb?dApp=59033956
+[lil-thumbnail-url]: https://cdn.lynda.com/course/2504707/2504707-1667934648272-16x9.jpg
